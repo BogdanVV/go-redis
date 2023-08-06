@@ -10,7 +10,6 @@ import (
 
 func main() {
 	r := gin.Default()
-
 	ctx := context.Background()
 	redisClient := redis.NewClient(&redis.Options{})
 	h := handlers.NewHandlers(redisClient, ctx)
